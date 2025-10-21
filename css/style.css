@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'JS Sirium';
   src: url(../font/JS-Sirium-Normal.ttf);
-
 }
 
 @font-face {
@@ -12,6 +11,12 @@
 @font-face {
   font-family: 'LINESeedSansTH_Th';
   src: url(../font/LINESeedSansTH_Th.ttf);
+}
+
+@font-face {
+  font-family: 'noto';
+  src: url(../font/NotoSansThaiLooped-VariableFont_wdth\,wght.ttf);
+
 }
 
 .bg {
@@ -123,6 +128,7 @@ h5 {
 
 
 p {
+  font-family: 'noto';
   font-size: 20px;
   
 }
