@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'LINESeedSansTH_Th';
+  src: url(../font/LINESeedSansTH_Th.ttf);
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  padding: 0 50px 0 40px;
+ 
+}
+
+h1{
+     font-size: 50px;
+     font-weight: bold;
+}
+
+p {
+  font-family: 'LINESeedSansTH_Th', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+
+/* -------- ปรับ Responsive -------- */
+
+/* สำหรับจอขนาดกลาง (แท็บเล็ต) */
+@media (max-width: 992px) {
+  .main-section {
+    flex-direction: column;
+    padding: 40px 40px;
+    text-align: center;
+  }
+
+  .text-content {
+    order: 1;
+  }
+
+  .right-image {
+    order: 2;
+    width: 70%;
+    max-width: 350px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+/* สำหรับจอเล็ก (มือถือ) */
+@media (max-width: 576px) {
+  .main-section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .right-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}

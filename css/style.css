@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'JS Sirium';
+  src: url(../font/JS-Sirium-Normal.ttf);
+
+}
+
+@font-face {
+  font-family: 'Lecturer';
+  src: url(../font/FC\ Lecturer\ [Non-commercial].ttf);
+}
+
+@font-face {
+  font-family: 'LINESeedSansTH_Th';
+  src: url(../font/LINESeedSansTH_Th.ttf);
+}
+
+.bg {
+  background-color: #b3d444;
+
+}
+
+/* สีของกล่องติดตามตอนอื่นๆ */
+.accordion-item {
+  background-color: #fff8dc; /* สีเหลืองอ่อน (Cornsilk) */
+}
+
+.accordion-button {
+  background-color: #fff8dc; /* ปุ่มหัวข้อสีเดียวกัน */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffefb0; /* สีเหลืองเข้มขึ้นนิดหน่อยเมื่อเปิดอยู่ */
+}
+
+.image-link-container {
+  align-items: center; /* จัดให้อยู่ในแนวเดียวกันแนวนอน */
+  
+}
+
+/* สีของลิ้งทดลองอ่าน */
+.image-link-container .nav-link {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+.image-link-container .nav-link:hover {
+  text-decoration: underline;
+}
+
+
+.bold-text {
+  font-weight: bold;
+}
+
+
+.main-section {
+  background-color: #d9d9d9;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 190px 0 40px;
+  box-sizing: border-box;
+}
+
+.item-section {
+  display: flex;
+  align-items: center;
+  padding: 0 50px 0 40px;
+ 
+}
+
+
+.text-content {
+  text-align: center;
+  flex: 1;
+}
+
+.right-image {
+  width: 400px;
+}
+
+
+
+h1 {
+  font-family: 'JS Sirium', sans-serif;
+  font-size: 50px;
+  color: #b3d444;
+  font-weight: bold;
+  -webkit-text-stroke: 0.01px #3b5a00;
+  /* สีเขียวเข้มขอบรอบตัวอักษร */
+}
+
+h2 {
+  font-family:  'Lecturer', sans-serif;
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+}
+
+
+h3 {
+  font-family:  'LINESeedSansTH_Th', sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+
+h4 {
+  font-family:  'LINESeedSansTH_Th', sans-serif;
+  font-size: 30px;
+  color: #4b6a11;
+  font-weight: bold;
+}
+
+h5 {
+  font-family:  'LINESeedSansTH_Th', sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+
+p {
+  font-size: 20px;
+  
+}
+
+
+
+/* -------- ปรับ Responsive -------- */
+
+/* สำหรับจอขนาดกลาง (แท็บเล็ต) */
+@media (max-width: 992px) {
+  .main-section {
+    flex-direction: column;
+    padding: 40px 40px;
+    text-align: center;
+  }
+
+  .text-content {
+    order: 1;
+  }
+
+  .right-image {
+    order: 2;
+    width: 70%;
+    max-width: 350px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+/* สำหรับจอเล็ก (มือถือ) */
+@media (max-width: 576px) {
+  .main-section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .right-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}
