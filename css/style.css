@@ -19,6 +19,7 @@
 
 }
 
+/* สี bar */
 .bg {
   background-color: #b3d444;
 
@@ -44,6 +45,9 @@
 
 /* สีของลิ้งทดลองอ่าน */
 .image-link-container .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-weight: bold;
   color: #007bff;
   text-decoration: none;
@@ -53,13 +57,14 @@
 }
 
 
+
 .bold-text {
   font-weight: bold;
 }
 
-
+ /* คำโปรย */
 .main-section {
-  background-color: #d9d9d9;
+  background-color: rgb(228, 227, 176);
   height: 700px;
   display: flex;
   align-items: center;
@@ -68,10 +73,11 @@
   box-sizing: border-box;
 }
 
+
 .item-section {
   display: flex;
   align-items: center;
-  padding: 0 50px 0 40px;
+  padding: 0 50px 0 0px;
  
 }
 
@@ -133,6 +139,37 @@ p {
   
 }
 
+/* เพลง */
+table {
+            width: 60%; /* กำหนดความกว้างของตาราง */
+            border-collapse: collapse; /* ทำให้เส้นขอบของตารางติดกัน */
+        }
+
+th, td {
+            border: 1px solid #ddd; /* กำหนดเส้นขอบ */
+            padding: 8px; /* กำหนดระยะห่างภายในเซลล์ */
+            text-align: left; /* จัดแนวข้อความชิดซ้าย */
+        }
+th {
+            background-color: #f2f2f2; /* กำหนดสีพื้นหลังของหัวตาราง */
+        }
+
+/* ปรับ table ให้เลื่อนดูในมือถือได้ */
+ .table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* ลื่นบนมือถือ */
+}       
+
+/* ปรับตารางให้ยืดตามคอนเทนเนอร์ แต่ตั้ง min-width เพื่อให้คอลัมน์ไม่ยุบจนอ่านไม่ได้ */
+.table-responsive table,
+table {
+  width: 100%;
+  max-width: 100%;
+  min-width: 420px; /* ปรับตามจำนวนคอลัมน์ที่ต้องการให้ไม่ยุบมากเกินไป */
+  border-collapse: collapse;
+}
+
 
 
 /* -------- ปรับ Responsive -------- */
@@ -144,11 +181,9 @@ p {
     padding: 40px 40px;
     text-align: center;
   }
-
   .text-content {
     order: 1;
   }
-
   .right-image {
     order: 2;
     width: 70%;
@@ -194,5 +229,21 @@ p {
   .right-image {
     width: 100%;
     max-width: 300px;
+  }
+}
+
+/* ปรับเซลล์ตารางเมื่อหน้าจอแคบ */
+@media (max-width: 768px) {
+  table {
+    min-width: 360px; /* ถ้าต้องการให้เล็กลงบนมือถือ */
+  }
+  th, td {
+    padding: 6px;
+    font-size: 14px;
+  }
+  /* ถ้ามี audio tag ให้ยืดเต็มเซลล์ */
+  td audio, th audio {
+    width: 100%;
+    height: auto;
   }
 }

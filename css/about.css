@@ -3,6 +3,16 @@
   src: url(../font/LINESeedSansTH_Th.ttf);
 }
 
+/* สี bar */
+.bg {
+  background-color: #b3d444;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+
 .main-section {
   display: flex;
   align-items: center;
